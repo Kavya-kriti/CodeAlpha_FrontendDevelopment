@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Kavya's Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+<header id="home">
+    <nav>
+      <h1 class="logo">Kavya Kriti</h1>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  
+    <div class="hero-banner">
+      <div class="overlay">
+        <div class="hero-content">
+          <h2>Hello, I'm <span>Kavya Kriti</span></h2>
+          <p>A passionate MCA student and aspiring software developer.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="assets/resume.pdf" class="btn" target="_blank">See My CV</a>
+            <a href="assets/resume.pdf" class="btn" download>Download CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
+  <!-- ABOUT SECTION -->
+  <section id="about" class="section">
+    <div class="about-container">
+      <img src="assets/profile.jpg" class="about-img" alt="Profile">
+      <div class="about-text">
+        <h2>About Me</h2>
+        <p>
+          I am <strong>Kavya Kriti</strong>, currently pursuing MCA (Semester 2).<br><br>
+          I enjoy coding in Java, exploring networking concepts, working with cloud technologies, and managing data using MySQL. I love creating modern web apps and learning continuously.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- SKILLS SECTION -->
+  <section id="skills" class="section skills-section">
+
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">
+        <button class="skill-btn" onclick="toggleDesc('html-desc')">HTML</button>
+        <div id="html-desc" class="skill-desc">Skilled in structuring web pages using semantic HTML.</div>
+      </div>
+  
+      <div class="skill">
+        <button class="skill-btn" onclick="toggleDesc('css-desc')">CSS</button>
+        <div id="css-desc" class="skill-desc">Good knowledge of layouts, animations, and responsive design.</div>
+      </div>
+  
+      
+  
+      <div class="skill">
+        <button class="skill-btn" onclick="toggleDesc('laravel-desc')">Laravel</button>
+        <div id="laravel-desc" class="skill-desc">Able to build web apps using Laravel MVC framework.</div>
+      </div>
+  
+      <div class="skill">
+        <button class="skill-btn" onclick="toggleDesc('mysql-desc')">MySQL</button>
+        <div id="mysql-desc" class="skill-desc">Familiar with database creation, queries, joins, and relationships.</div>
+      </div>
+  
+      <div class="skill">
+        <button class="skill-btn" onclick="toggleDesc('cloud-desc')">Cloud</button>
+        <div id="cloud-desc" class="skill-desc">Basic understanding of cloud services and platforms like AWS.</div>
+      </div>
+  
+      <div class="skill">
+        <button class="skill-btn" onclick="toggleDesc('networking-desc')">Networking</button>
+        <div id="networking-desc" class="skill-desc">Knowledge of computer networks, IP addressing, and protocols.</div>
+      </div>
+  
+      <div class="skill">
+        <button class="skill-btn" onclick="toggleDesc('java-desc')">Java</button>
+        <div id="java-desc" class="skill-desc">Interest in OOPs, core Java, and Java program building.</div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="section projects-section">
+
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+       
+        <h3>Smart Soil Advisor</h3>
+        <p>crop recommendation system.</p>
+        <a href="https://soil-advisor.vercel.app/" target="_blank" class="btn">View Project</a>
+      </div>
+      <div class="project-card">
+        <img src="assets/project2.png" alt="Student Dashboard">
+        <h3>Student Dashboard</h3>
+        <p>Performance dashboard with filters and charts.</p>
+        <a href="https://github.com/yourusername/student-dashboard" target="_blank" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CERTIFICATES SECTION -->
+  <section id="certificates" class="section certificates-section">
+    <h2>Certificates</h2>
+    <div class="projects-grid">
+  
+      <div class="project-card">
+        <h3>Technology Management</h3>
+        <a href="assets/Technology_management.PDF" target="_blank" class="btn">View Certificate</a>
+      </div>
+  
+      <div class="project-card">
+        <h3>Laravel</h3>
+        <a href="assets/Laravel.PDF" target="_blank" class="btn">View Certificate</a>
+      </div>
+  
+    </div>
+  </section>
+  
+  
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="section contact-section">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+  
+  <footer>
+    <p>&copy; 2025 Kavya Kriti. All rights reserved.</p>
+  </footer>
+  
+</body>
+</html>
